@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 	<!-- Compiled and minified CSS -->
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js" integrity="sha256-gSh8eotzb/CVvCREGPUNgIWuDnTYnZvVOQnRrP1eDjI=" crossorigin="anonymous"></script>
+	<script src="./js/GLTFLoader.js"></script>
+	<script src="./js/OrbitControls.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+		<ul id="dropdown1" class="dropdown-content nav-dropdown" >
+			<li><a href="#!" class="white-text">2D Animation</a></li>
+			<li><a href="#!" class="white-text">3D Modeling</a></li>
+			<li><a href="#!" class="white-text">3D Animation</a></li>
+			<li><a href="#!" class="white-text">3D Architecture</a></li>
+			<li><a href="#!" class="white-text">3D Printing</a></li>
+			<li><a href="#!" class="white-text">3D Lighting & Rendering</a></li>
+			<li><a href="#!" class="white-text">Motion Graphic & VFX</a></li>
+			<li><a href="#!" class="white-text">Industrial Iraining </a></li>
+		</ul>
+	<nav class="nav-extended  " id="navbar" style="padding:1%;">
+
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo" style="margin-left:110px;">
+				<img src="./images/logo.svg" height="90%" width="90%" alt="logo ">
+			</a> <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+		</div>
+		<div class="nav-content center">
+			<ul id="nav-mobile" class="hide-on-med-and-down borderYtoX">	
+			 <li><a class="waves-effect waves-light btn-flat white-text onthis" href="#"> <i class="fas fa-home " style="font-size:15px;"></i> &nbsp;Home </a> </li>
+				<li><a class="waves-effect waves-light btn-flat white-text onthis" href="#"><i class="fas fa-user-alt" style="font-size:15px;"></i> &nbsp; About Us</a></li>
+				<li><a class="dropdown-trigger waves-effect waves-light btn-flat white-text" href="#!" data-target="dropdown1"><i class="fas fa-tools" style="font-size:15px;"></i>&nbsp; Service<i class="material-icons right">arrow_drop_down</i></a></li>
+				<li><a class="waves-effect waves-light btn-flat white-text onthis" href="#"> <i class="fas fa-address-card" style="font-size:15px;"></i>&nbsp; Blog</a></li>
+				<li><a class="waves-effect waves-light btn-flat white-text onthis" href="#"> <i class="fas fa-tasks" style="font-size:15px;"></i> &nbsp;Quote</a>
+			<li class="animated-box in"><a class="waves-effect waves-light btn-flat white-text animated-box in" href="#"><i class="fas fa-address-book" style="font-size:13px;"></i>&nbsp; Contact</a>
+					</li>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<ul class="sidenav  " id="mobile-demo ">
+		<li>
+			<div class="user-view">
+				<div class="background">
+					<img src="images/component.jpg">
+				</div>
+				<a href="#user">
+					<img class="circle" src="images/trust2.png">
+				</a> <a href="#name"><span class="white-text name">Supreme Animation</span></a>
+				<a href="#email"><span class="white-text email">info@supremeanimation.com</span></a>
+			</div>
+		</li>
+		<li>
+		<div class="divider"></div>
+		</li>
+		<li><a class="subheader">Links</a>
+		</li>
+		<li><a class="waves-effect" href="#">Home</a>
+		</li>
+		<li><a class="waves-effect" href="#">About Us</a>
+		</li>
+		<li><a class="waves-effect" href="#">Careers</a>
+		</li>
+		<li class="no-padding">
+			<ul class="collapsible collapsible-accordion">
+			  <li>
+				<a class="collapsible-header waves-effect" >Service <i class="material-icons">arrow_drop_down</i></a>
+				<div class="collapsible-body">
+				  <ul>
+					<li><a href="#!" class="waves-effect">2D Animation</a></li>
+					<li><a href="#!" class="waves-effect">3D Modeling</a></li>
+					<li><a href="#!" class="waves-effect">3D Animation</a></li>
+					<li><a href="#!" class="waves-effect">3D Architecture</a></li>
+					<li><a href="#!" class="waves-effect">3D Printing</a></li>
+					<li><a href="#!" class="waves-effect">3D Lighting & Rendering</a></li>
+					<li><a href="#!" class="waves-effect">Motion Graphic & VFX</a></li>
+					<li><a href="#!" class="waves-effect">Industrial Iraining</a></li>
+					
+				  </ul>
+				</div>
+			  </li>
+			</ul>
+		</li>
+		<li><a class="waves-effect" href="#">Portfolio</a>
+		</li>
+		<li><a class="waves-effect" href="#">Industrial Iraining</a>
+		</li>
+		<li><a class="waves-effect" href="#">Blog</a>
+		</li>
+		<li><a class="waves-effect" href="#">Quote</a>
+		</li>
+    </ul>
+    <section>
+       <div class="first">
+           <div class="container">
+                <div class="row">
+					
+                   <div class="col 12 s12">
+                       <h1 class="white-text first_heading">Grow Business<br> Better</h1>
+                       <h6 class="neon" >Perth Digital Marketing Growing</h6>
+					</div> 
+				</div>	
+				<div class="row">
+					<div class="col 12 s6">
+						<div id="scene"></div>
+						
+						
+						Rotate:<input type="range" min="13.69" max="20" step="0.01" value="13.69"
+						oninput="rotateMoodel(this.value)" onchange="rotateMoodel(this.value)" >
+
+						Scale:<input type="range" min="3" max="8" step="0.01" 
+						oninput="scaleMoodel(this.value)" onchange="scaleMoodel(this.value)">
+
+					</div> 
+				</div>
+               </div>
+           </div> 
+
+	</section>
+	
+
+
+        <section>
+            <div class="service">		
+                <div class="container service-content" >
+                    <h3 class="service-heading">Your Guides For The Growth Journey Ahead</h3>
+                    <div class="row">
+                        <div class="col s12 l3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="circle responsive-img" src="./images/service1.png">
+                                </div>
+                                <div class="card-content">
+                                    <a href="">Concept and<br>creation</a>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="circle responsive-img" src="./images/service2.png">
+                                </div>
+                                <div class="card-content">
+                                    <a href="">3D Model and<br>Design</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="circle responsive-img" src="./images/service3.png">
+                                </div>
+                                <div class="card-content">
+                                    <a href="">Texturing and
+										<br>Lighting</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="circle responsive-img" src="./images/service4.png">
+                                </div>
+                                <div class="card-content">
+                                    <a href="">Rendering and Post Effect</a>
+								</div>
+								
+							</div>
+							
+				
+						</div>
+					</div>
+					<br><br><br><br>
+					<div class="container">
+						<div class="row">
+						       <div class="col  s4 pull-s9"></div>
+							<div class="col s8 white-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci repellendus alias cumque nihil necessitatibus culpa facilis, et dolorem voluptas magnam optio quidem dignissimos est corporis? Quia iusto eius vero libero eum deserunt impedit nobis minima? Exercitationem autem, atque corrupti dicta adipisci illum expedita libero facere provident, temporibus harum est vero eveniet iusto velit aspernatur error maiores quaerat accusantium odit esse unde obcaecati, repellat eos? Possimus, accusantium excepturi quis facilis optio in modi alias ullam non, iste a temporibus! Neque vel tempore vero debitis voluptatibus repellat, harum rem, laboriosam pariatur consequuntur placeat cumque, ipsam iste necessitatibus labore nostrum dolores culpa eligendi at nisi. Autem ipsa saepe quidem, temporibus ab pudiandae soluta provident quisquam ipsam voluptatibus distinctio laborum nam odit exercitationem! At in nam repellendus. Error, soluta?</p></div>
+						</div>
+					</div>
+					
+				</div>
+            </div>
+			</section>
+        </section>
+	<section>
+	<div class="trust">
+		<div class="trust-content" >
+			<div class="row">
+				<div class="col s12 m12">
+					<h4 class="trust-heading white-text center-align"> Your Trusted Digital Guides </h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m12">
+					<h6 class="trust-tagline white-text center-align">Partnering to build your online marketing step-by-step</h>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m4">
+					<img src="./images/trust1.png" class="responsive-img trust-img" alt="">
+					<div class="trust-grid-title white-text center-align">
+						
+						<h5 class="ser_heading">Instant Reply</h5>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perferendis rerum, maxime labore itaque quo deleniti blanditiis a ipsa sed, vitae impedit, possimus quam placeat. Minima asperiores earum ipsam vitae.
+						</p>
+						<i class="material-icons extend">expand_more</i>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<img src="./images/trust2.png" class="responsive-img  trust-img" alt="">
+					<div class="trust-grid-title white-text center-align">
+						<h5 class="ser_heading">Clear Comunication</h5>
+				
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perferendis rerum, maxime labore itaque quo deleniti blanditiis a ipsa sed, vitae impedit, possimus quam placeat. Minima asperiores earum ipsam vitae.
+						
+						</p>
+						<i class="material-icons extend">expand_more</i>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<img src="./images/trust3.png" class="responsive-img trust-img" alt="">
+					<div class="trust-grid-title white-text center-align">
+						<h5 class="ser_heading">Well managed</h5>
+					
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perferendis rerum, maxime labore itaque quo deleniti blanditiis a ipsa sed, vitae impedit, possimus quam placeat. Minima asperiores earum ipsam vitae.
+							
+						</p>
+						<i class="material-icons extend">expand_more</i>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s12 m4">
+					<img src="./images/trust4.png" class="responsive-img trust-img" alt="">
+					<div class="trust-grid-title white-text center-align">
+						<h5 class="ser_heading">Quality Work</h5>
+					
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perferendis rerum, maxime labore itaque quo deleniti blanditiis a ipsa sed, vitae impedit, possimus quam placeat. Minima asperiores earum ipsam vitae.
+							
+						</p>
+						<i class="material-icons extend">expand_more</i>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<img src="./images/trust5.png" class="responsive-img trust-img" alt="">
+					<div class="trust-grid-title white-text center-align">
+						<h5 class="ser_heading">Planning</h5>
+					
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perferendis rerum, maxime labore itaque quo deleniti blanditiis a ipsa sed, vitae impedit, possimus quam placeat. Minima asperiores earum ipsam vitae.
+							 
+						</p>
+						<i class="material-icons extend">expand_more</i>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<img src="./images/trust6.png" class="responsive-img trust-img" alt="">
+					<div class="trust-grid-title white-text center-align">
+						<h5 class="ser_heading">Experienced team</h5>
+				
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perferendis rerum, maxime labore itaque quo deleniti blanditiis a ipsa sed, vitae impedit, possimus quam placeat. Minima asperiores earum ipsam vitae.
+							
+						</p>
+						<i class="material-icons extend">expand_more</i>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</section> 
+
+<section>
+
+<div class="packages">
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m6">
+				<h3 class="white-text" style="font-family: 'Righteous', cursive;">We're Packed For Growth</h3>
+				<p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ipsa.</p>
+			</div>
+			<div class="col s12 m6">
+				<img src="./images/package_main.png" height="70%" width="70%" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<!-- <div class="col s12 m8 offset-m2 l6 offset-l3"> -->
+				<div class="card-panel z-depth-5">
+					<div class="row valign-wrapper">
+						<div class="col s2">
+							<img src="images/growth1.png" alt="" class="responsive-img">
+							<!-- notice the "circle" class -->
+						</div>
+						<div class="col s10"> 
+							<span class="white-text">
+								<h5 class="white-text">3D MODEL DESIGN</h5>
+								We create high quality 3D models, textures, lighting & Rendering.We don’t just make cute looking animations…
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+			<div class="col s12 m6">
+				<div class="card-panel z-depth-5">
+					<div class="row valign-wrapper">
+						<div class="col s2">
+							<img src="images/growth2.png" alt="" class="responsive-img">
+							<!-- notice the "circle" class -->
+						</div>
+						<div class="col s10">
+							<h5 class="white-text">3D ANIMATION</h5>
+							<span class="white-text">
+								Supreme Animations holds a pivotal position in offering the most versatile 3D animation services….
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<!-- <div class="col s12 m8 offset-m2 l6 offset-l3"> -->
+				<div class="card-panel z-depth-5">
+					<div class="row valign-wrapper">
+						<div class="col s2">
+							<img src="images/growth3.png" alt="" class="responsive-img">
+							<!-- notice the "circle" class -->
+						</div>
+						<div class="col s10">
+							<h5 class="white-text">3D PRINT MODELS</h5>
+							<span class="white-text">
+								After hard digging the ocean level technology domain of 3D printing, we at Supreme Animations…
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+			<div class="col s12 m6">
+				<div class="card-panel z-depth-5">
+					<div class="row valign-wrapper">
+						<div class="col s2">
+							<img src="images/growth4.png" alt="" class="responsive-img">
+							<!-- notice the "circle" class -->
+						</div>
+						<div class="col s10">
+							<h5 class="white-text">3D ARCHITECTURE</h5>
+							<span class="white-text">
+								We hold a higher visualization efficiency and proficiency that helps us deliver the best.
+							   </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<!-- <div class="col s12 m8 offset-m2 l6 offset-l3"> -->
+				<div class="card-panel z-depth-5">
+					<div class="row valign-wrapper">
+						<div class="col s2">
+							<img src="images/growth5.png" alt="" class="responsive-img">
+							<!-- notice the "circle" class -->
+						</div>
+						<div class="col s10">
+							<h5 class="white-text">VFX & MOTION GRAPHIC</h5>
+							<span class="white-text">
+								This is a square image. Add the "circle" class to it to make it appear circular.
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+			<div class="col s12 m6">
+				<div class="card-panel z-depth-5">
+					<div class="row valign-wrapper">
+						<div class="col s2">
+							<img src="images/growth6.png" alt="" class="responsive-img">
+							<!-- notice the "circle" class -->
+						</div>
+						<div class="col s10">
+							<h5 class="white-text">3D RENDERING & LIGHING</h5>
+							<span class="white-text">
+			  This is a square image. Add the "circle" class to it to make it appear circular.
+			</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+
+<div class="testimonial">
+	<div class="container">
+		<h3 class="center white-text"  style="  font-family: 'Righteous', cursive;">Partners We’ve Helped Reach New Heights</h3>
+		<p class="center white-text">What there thoughts</p> <span class="left_click hide-on-med-and-down">
+	  <a href="Previo" class="movePrevCarousel middle-indicator-text  content-indicator">
+	<img src="./images/slider_arrow_left.png" alt=""></a>
+  </span>
+		<span class="right_click hide-on-med-and-down">
+	<a href="Siguiente" class=" moveNextCarousel middle-indicator-text  content-indicator">
+	<img src="./images/slider_arrow_right.png" alt=""></a>
+  </span>
+		<div class="carousel carousel-slider" data-indicators="true">
+			<div class="carousel-item white-text" href="#one!">
+				<div class="items">
+						<div class="row">
+							<div class="col sm m4">
+								<img src="./images/testimonials/image1.png" class="responsive-img" alt="">
+							</div>
+							<div class="col sm m8">
+								<h4 class="name white-text">Victoria Reesal</h4>
+								<h6 class="profile">Chief Editor</h6>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At perspiciatis adipisci corporis repudiandae! Cupiditate doloribus alias rerum eos porro expedita.</p>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="carousel-item white-text" href="#two!">
+				<div class="items">
+						<div class="row">
+								<div class="col sm m4">
+									<img src="./images/testimonials/image1.png" class="responsive-img" alt="">
+								</div>
+								<div class="col sm m8">
+									<h4 class="name white-text">Victoria Reesal</h4>
+									<h6 class="profile">Chief Editor</h6>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At perspiciatis adipisci corporis repudiandae! Cupiditate doloribus alias rerum eos porro expedita.</p>
+								</div>
+						</div>
+				</div>
+			</div>
+			<div class="carousel-item white-text" href="#three!">
+				<div class="items">
+						<div class="row">
+								<div class="col sm m4">
+									<img src="./images/testimonials/image1.png" class="responsive-img" alt="">
+								</div>
+								<div class="col sm m8">
+									<h4 class="name white-text">Victoria Reesal</h4>
+									<h6 class="profile">Chief Editor</h6>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At perspiciatis adipisci corporis repudiandae! Cupiditate doloribus alias rerum eos porro expedita.</p>
+								</div>
+						</div>
+				</div>
+			</div>
+			<div class="carousel-item white-text" href="#four!">
+				<div class="items">
+						<div class="row">
+								<div class="col sm m4">
+									<img src="./images/testimonials/image1.png" class="responsive-img" alt="">
+								</div>
+								<div class="col sm m8">
+									<h4 class="name white-text">Victoria Reesal</h4>
+									<h6 class="profile">Chief Editor</h6>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At perspiciatis adipisci corporis repudiandae! Cupiditate doloribus alias rerum eos porro expedita.</p>
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="blog">
+	<div class="container">
+		<h3 class="white-text" style="  font-family: 'Righteous', cursive;padding-bottom:3%;">Digital Marketing Stories From The Trail…</h3>
+		<div class="row">
+			<div class="col sm m4">
+					<div class="card sticky-action">
+							<div class="card-image">
+								<img src="images/office.jpg">
+							</div>
+							<div class="card-stacked">
+								<div class="card-content">
+										<span class="card-title activator white-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+										<p><a href="#">This is a link</a></p>
+								</div>
+								<div class="card-action">
+									<p class="white-text">Nov 9, 2020</p>
+								</div>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title white-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+								<p class="white-text">Here is some more information about this product that is only revealed once clicked on.</p>
+								<p><a href="#">This is a link</a></p>
+							</div>
+					 </div>
+			</div>
+			<div class="col sm m4">
+					<div class="card sticky-action">
+							<div class="card-image">
+								<img src="images/office.jpg">
+							</div>
+							<div class="card-stacked">
+								<div class="card-content">
+										<span class="card-title activator white-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+										<p><a href="#">This is a link</a></p>
+								</div>
+								<div class="card-action">
+									<p class="white-text">Nov 9, 2020</p>
+								</div>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title white-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+								<p class="white-text">Here is some more information about this product that is only revealed once clicked on.</p>
+								<p><a href="#">This is a link</a></p>
+							</div>
+					 </div>
+			</div>
+			<div class="col sm m4">
+					<div class="card sticky-action ">
+							<div class="card-image">
+								<img src="images/office.jpg">
+							</div>
+							<div class="card-stacked">
+								<div class="card-content">
+										<span class="card-title activator white-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+										<p><a href="#">This is a link</a></p>
+								</div>
+								<div class="card-action">
+									<p class="white-text">Nov 9, 2020</p>
+								</div>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title white-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+								<p class="white-text">Here is some more information about this product that is only revealed once clicked on.</p>
+								<p><a href="#">This is a link</a></p>
+							</div>
+					 </div>
+			  </div>
+		</div>
+	</div>
+	
+</div>
+<div class="ready">
+		
+		<div class="container">
+			<div class="valign-wrapper">
+				<span class="white-text"   style="font-family: 'Righteous', cursive;
+			">Ready To Grow?</span>
+				
+			</div>
+			<br>
+			<a class="waves-effect waves-teal btn-large white black-text ready-btn"><i class="material-icons right">arrow_forward</i>Start a Conversation</a>
+		</div>
+		<img src="./images/grace3.svg" width="100%" class="blog-bottom-svg" alt="">
+</div>
+<section>
+	  
+<footer class="page-footer">
+	<blockquote>
+		Choose a job you love,and you will never have<br> to work a day in your life.
+	  </blockquote>
+	<br>
+	<div class="container">
+		<div class="row">
+		
+		<div class="col m3 s12">
+			<h5 class="white-text">OFFICES</h5>
+			<span class="animate-border_footer border-black"></span>
+		
+			<ul class="footer-links">
+			<li>
+				<h6> <i class="fas fa-map-marked-alt"></i>   USA</h6>
+				<p class="grey-text text-lighten-3">5501 National Rd E,<br>
+						Richmond Indiana , USA
+				</p>
+			</li>
+			<li>
+				<h6> <i class="fas fa-map-marked-alt"></i>  INDIA</h6>
+				<p class="grey-text text-lighten-3">Supreme Animation <br> Chandigarh Sector-33 , India
+				</p>
+			</li>
+			</ul>
+		</div>
+		<div class="col m3 s12">
+				<h5 class="white-text">SITE MAP</h5>
+				<span class="animate-border_footer border-black"></span>
+				<ul class="footer-links">
+					<li> <i class="far fa-hand-point-right"></i>   <a class="grey-text text-lighten-3" href="#!">Home</a>
+					</li>
+					<li><i class="far fa-hand-point-right"></i>   <a class="grey-text text-lighten-3" href="#!">About Us</a>
+					</li>
+					<li><i class="far fa-hand-point-right"></i>   <a class="grey-text text-lighten-3" href="#!">Services</a>
+						<li> <i class="far fa-hand-point-right"></i>    <a class="grey-text text-lighten-3" href="#!">Blog</a>
+						</li>
+					</li>
+					<li> <i class="far fa-hand-point-right"></i>    <a class="grey-text text-lighten-3" href="#!">Quote</a>
+					</li>
+					<li> <i class="far fa-hand-point-right"></i>   <a class="grey-text text-lighten-3" href="#!">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col m3 s12">
+				<div class="grey-text text-lighten-4">
+					<ul class="footer-links">
+						<li><a href="privacy" class="white-text"> Privacy Policy </a></li>
+						<li><a href="terms" class="white-text">Terms &amp; Conditions </a></li>
+						<li><a href="Disclaimer" class="white-text">Disclaimer &amp; Intellectual Property</a></li>
+					</ul>
+			</div>	
+			
+					
+				</div>
+			<div class="col m3 s12">
+					<h5 class="white-text">STAY IN TOUCH</h5>
+					<span class="animate-border_footer border-black"></span>
+					<div class="socialicon_footer twitter"><i class="fa fa-twitter"></i></div>
+					<div class="socialicon_footer facebook"><i class="fa fa-facebook"></i></div>
+					<div class="socialicon_footer linkedin"><i class="fa fa-linkedin"></i></div>
+					<div class="socialicon_footer pintrest"><i class="fa fa-pinterest"></i></div>
+					<div class="socialicon_footer google"><i class="fa fa-google-plus"></i></div>
+					<div class="socialicon_footer skype"><i class="fa fa-skype"></i></div> 
+				  
+				   
+					
+					
+					
+				</div>		
+
+				</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+		<div class="center">
+				Supreme Animation private limited All right reserved © 2019
+		</div>
+		</div>
+	</div>
+
+	
+</footer>
+</section>
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>

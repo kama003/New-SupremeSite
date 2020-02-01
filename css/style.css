@@ -1,0 +1,390 @@
+@import './fonts/AvenirNext-Bold.woff2';
+@import './fonts/AvenirNext-DemiBold.woff2';
+@import './fonts/AvenirNext-Medium.woff2';
+@import './fonts/AvenirNext-Regular.woff2';
+ html {
+	scroll-behavior: smooth;
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #1e3965;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+.chatbot{
+	position: fixed;
+	bottom: 0;
+	padding: 2%;
+	z-index: 99999999999;
+}
+.whatapp{
+	position: fixed;
+	bottom: 0;
+	padding: 2%;
+	z-index: 99999999999;
+	right: 0;
+}
+.skype{
+	position: fixed;
+	padding: 2%;
+	z-index: 99999999999;
+	right: 0;
+	top: 748px;
+}
+
+.hero{
+	width: 100%;
+    height: 100vh;
+}
+
+.hero .background{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: url(../images/home-sky-1920x1080.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+ .hero .mountain{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/digital-marketing-hero-02-with-flag.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+.hero .pathway{
+    position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: url(../images/home-pathway-1920x1080.png) no-repeat 50% 50%;
+      background-size: cover;
+}
+.hero .sidetree{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/home-left-trees-1920x1080.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+.hero .people{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/home-people-1920x1080.png) no-repeat 50% 50%;
+	background-size: cover;
+	top: 14px;
+}
+.hero .hero-text{
+	position: absolute;
+	width: 29%;
+    left: 10%;
+    top: 20%;
+}
+.hero .hero-text h1{
+	font-weight: 700;
+	
+}
+.hero img{
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.hero-mobile{
+	background-image: url(../images/Group14.svg);
+	height: 50vh;
+	widows: 100%;
+	background-size: cover;
+	background-position: 70% 90%;
+
+}
+
+nav {
+	background: linear-gradient(180deg, #090e0d 0%, rgba(31, 56, 103, 0) 100%);
+	-webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0px rgba(0, 0, 0, 0.12), 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0px rgba(0, 0, 0, 0.12), 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+	position: fixed;
+	z-index: 999;
+	transition: top 0.5s ease-in-out;
+}
+nav ul {
+	margin: 37px;
+	margin-left: 21%;
+}
+nav ul li{
+	font-family: Avenir Next,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+.nav-dropdown{
+	background: rgba(31, 72, 90, 0.8);
+	width: 212.078px !important;
+}
+.service {
+	background-color: #1e3965;
+	
+	position: relative;
+	margin-top: -2px;
+	
+}
+.service .container{
+	padding: 10%;
+}
+.service .row .col {
+	padding: 0 0.90rem;
+}
+.service .card {
+    background-image: linear-gradient(to top, #3159A1, #2a4b98);
+	transition: all .3s ease;
+	border-radius: 10px;
+}
+
+
+.service .card a{
+    color : #fff;
+}
+
+.service .card:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.service .card:hover a{
+    color : #f5a623;
+}
+.service .card-image {
+	height: 80%;
+	width: 80%;
+	padding: 10%;
+	margin-left: 10%;
+}
+.service .card .card-content {
+	font-family: Avenir Next,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.service .service-heading {
+	font-family: Avenir Next,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 47px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.guides {
+	background-color: #1e3965;
+	margin: 0;
+	padding: 0;
+}
+.guides .guides-image {
+	width: 180%;
+}
+.guides .guide-content {
+	
+	padding: 0%;
+	color: #fff;
+	font-family: Avenir Next,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+	justify-content: center;
+}
+.guides .guide-content p {
+	margin-left: 16%;
+	width: 64%;
+	line-height: 28px;
+}
+.trust {
+	background-color: #172A51;
+	margin-top: -7px;
+}
+.trust .trust-content {
+	padding: 2% 10% 0 10%;
+}
+.trust .trust-heading {
+	font-family: Avenir Next,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 47px;
+}
+.trust .card {
+	background: transparent;
+}
+
+.trust p{
+	height: 70px;
+	overflow: hidden;
+	/* text-overflow: ellipsis; */
+	-webkit-transition:  height 0.2s; /* For Safari 3.1 to 6.0 */
+	transition:  height 0.2s;
+}
+
+.trust .trust-img {
+	padding: 10%;
+	margin-left: 10%;
+}
+
+.trust .extend{
+	cursor: pointer;
+	transform :rotate(0deg);
+	width: 100%;
+	height: 40px;
+	background-color: #172a51;
+}
+
+.packages {
+	background: #384083;
+	margin-top: -7px;
+}
+.packages .card-panel {
+	background-color: #444BA5;
+	border-radius: 10px;
+}
+.testimonial {
+	background: #313871;
+	margin-top: -8px;
+	background-image: url('../images/slider_background.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.testimonial .container {
+	padding: 5%;
+}
+.testimonial .container p {
+	font-size: 30px;
+}
+.testimonial .carousel .items {
+	background: #444BA5;
+	border-radius: 8px;
+	width: 80%;
+	margin-left: 10%;
+	height: 90%;
+	padding: 62px 0 0 21px;
+}
+
+@media screen and (max-width: 400px) {
+	.testimonial .carousel .items img{
+		height: 80px;
+		width: 80px;
+	}
+	
+	.testimonial .carousel .items {
+		padding: 1px 0 0 12px;
+	}
+}
+
+.left_click {
+	position: absolute;
+	margin: 190px 0 0 -94px;
+}
+.right_click {
+	position: absolute;
+	margin: 190px 0 0 1103px;
+}
+
+.blog{
+	background: #294989;
+	margin-top: -8px;
+}
+
+.blog .container{
+	padding: 5%;
+}
+
+.blog .card{
+	background-color: #444ba5;
+}
+
+.blog .card .card-reveal {
+    background-color: #444ba5;
+}
+
+.ready{
+	background-image: url('../images/ready.jpg');
+	background-size: cover;
+}
+
+.ready .blog-bottom-svg{
+	margin-bottom: -8px;
+}
+.ready .container{
+	padding: 4%;
+}
+
+.ready .container span{
+	font-family: Avenir Next,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+	font-size: 3.75rem;
+	line-height: 64px;
+	font-weight: 700;
+}
+.ready .ready-btn{
+	font-family: Avenir Next,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+	border-radius: 32px;
+	font-weight: 400;
+}
+
+.page-footer{
+	background: #294989;
+}
+.link.facebook {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+
+.link.twitter {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+.link.instagram {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+.link.pinterest {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+.link.youtube {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+.f-links1 {
+    padding: 10px;
+}
+.page-footer .list li{
+	float: left;
+}
+.link {
+    margin-left: 2%;
+}
+
+footer .footer-links li{
+	padding: 2%;
+}
